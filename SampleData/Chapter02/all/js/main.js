@@ -40,6 +40,7 @@ $(function() {
 
 
 	//メソッドチェーン $('セレクタ').メソッド1().メソッド2().メソッド3(). ....
+	//test
 	$('#typo')
 		.on('mouseover', function(){
 			$('#typo').css({
