@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>JavaSctipt Practice</title>
+	<style>
+
+		body {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.box {
+			width: 100px;
+			height: 100px;
+			background-color:	skyblue;
+			cursor:	pointer;
+			transition: 0.8s; /*変化させる場合にかかる時間*/
+			margin: 10px 10px;
+			text-align: center;
+			line-height: 100px;
+		}
+
+		.circle {
+			background-color: pink;
+			border-radius: 50%;
+			transform: rotate(360deg);
+		}
+
+		.win {
+			background:	pink;
+			border-radius: 50%;
+			transform: rotate(360deg);
+		}
+
+		.lose {
+			transform:	scale(0.9);
+		}
+
+	</style>
+</head>
+
+<body>
+
+
+
+	<script>
+		'use strict'; //バグチェック
+
+		const num = 5;
+		const winner = Math.floor(Math.random() * num); // 0 ~ 4までの値
+
+		 for (let i = 0; i < num; i++) {
+			const div = document.createElement('div'); //定数定義
+			div.classList.add('box'); //boxクラスのついたdiv要素を生成
+
+			div.addEventListener('click', () => {
+				if (i === winner) {
+					div.textContent = 'Win!';
+					div.classList.add('win');
+				} else {
+					div.textContent = 'Lose...';
+					div.classList.add('lose');
+				}
+			})
+
+			document.body.appendChild(div); //divをbody要素とする
+
+		 }
+
+
+
+
+	</script>
+</body>
+</html>
