@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript Basics</title>
+</head>
+<body>
+
+	<script>
+		'use strict'; //エラーチェック
+
+		console.log('Hello World!'); //ダブクォーでも良いが今回シングルで統一
+		console.log('Hello World Again!');
+
+	</script>
+	<script src="js/main.js"></script>
+	<script src="js/main2.js"></script>
+	<script src="js/main3.js"></script>
+	<script src="js/main4.js"></script>
+	<script>
+		//コードをブロックで囲おう
+		//(main4.jsの最後で学習する) {}はそのままかけるので、スコープを分ける習慣をつける
+		{
+			const a = 300;
+			console.log(a);
+		}
+	</script>
+</body>
+</html>
