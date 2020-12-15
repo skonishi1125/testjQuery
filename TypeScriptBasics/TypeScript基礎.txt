@@ -1,0 +1,19 @@
+*概要
+マイクロソフトのオープンソース。JavaScriptがベース
+TypeScript -> JavaScriptに変換して利用する
+静的片付け、クラスベースのオブジェクト指向
+
+手順1.TypeScriptをインストール
+sudo npm install -g typescript
+
+手順2.プログラムを書く
+拡張子は慣習的に.tsとすることが多い
+
+手順3.コンパイル
+tsc main.ts
+など。jsファイルができる
+
+手順4 実行
+jsファイルの方で。
+node main.js
+->console.logなどがターミナルに出力される
