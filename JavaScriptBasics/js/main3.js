@@ -27,7 +27,7 @@ showAd2();
 
 //returnで値を返す, 関数宣言
 function sum(a, b, c) {
-	return a + b + c; //これ以降は実行されないので気を付ける
+	return a + b + c; //return以降は実行されない
 }
 
 // sum(1, 2, 3);

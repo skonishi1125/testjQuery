@@ -55,11 +55,11 @@ console.log('------------');
 
 {
 	const scores = [80, 90, 40, 99];
-	scores.splice(1, 0, 30, 80); //90の前に30, 80を追加
+	scores.splice(1, 0, 30, 70); //90の前に30, 80を追加
 	scores.splice(scores.length - 1, 1); // 99を削除(配列の長さ-1の添字のものを, 1つ消す)
 
 	for (let i = 0; i < scores.length; i++) {
-		console.log(`Score ${i} : ${scores[i]}`);
+		console.log(`splice test Score ${i} : ${scores[i]}`);
 	}
 }
 
@@ -197,13 +197,13 @@ console.log('--------');
 
 
 //オブジェクト記法
-console.log('---------');
+console.log('-----オブジェクト記法----');
 
 {
 	//const point = [100, 180];
 
 	const point = {
-		x: 100, //x: 100 プロパティ(メンバ)と呼ぶ x: 単体を、 名前(キー)と呼ぶ 100単体を値と呼ぶ
+		x: 100, //x: 100 プロパティ(メンバ)と呼ぶ x: 単体を、名前(キー)と呼ぶ 100単体を値と呼ぶ
 		y: 180, //カンマなしでもOKだが体裁を整える意味で書いている
 	}; 	// {}だが、値の代入をしているのでセミコロンを記述する
 	console.log(point);
@@ -272,7 +272,7 @@ console.log('---------');
 
 	keys.forEach(key => {
 		console.log(`Key: ${key} Value: ${point[key]}`);
-		//${point.key}は使えない。keyが現在文字列で取得されているので、['']で繋げてあげよう
+		//${point.key}は使えない。keyが現在文字列で取得されているので、[key]で繋げてあげよう
 	});
 
 	// オブジェクト配列

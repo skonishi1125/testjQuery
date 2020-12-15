@@ -11,7 +11,7 @@
 		const text = document.querySelector('input');
 		//入力されたものはvalue属性で取得できる
 		li.textContent = text.value;
-		//ulの子要素として追加する
+		//ulの子要素として追加する main5.js
 		document.querySelector('ul').appendChild(li);
 
 		//テキストの値を空文字に
@@ -23,3 +23,5 @@
 	});
 
 }
+
+//Ctrl + Cmd + ↑ or ↓ 行移動

@@ -9,7 +9,7 @@ console.log('■ ■ ■ ■ main2.js ■ ■ ■ ■');
 	console.log(str.length); //5文字
 
 	// str.substring(開始位置, 終了位置);
-	console.log(str.substring(2,4));
+	console.log(str.substring(1,3));
 
 	// 文字列にアクセス
 	console.log(str[1]); // 配列のような書き方となるが、代入したりはできない
@@ -46,7 +46,7 @@ console.log('■ ■ ■ ■ main2.js ■ ■ ■ ■');
 
 	const avg = sum / scores.length;
 
-	console.log(sum);
+	console.log(sum); // 10 + 3 + 9 = 22
 	console.log(avg);
 	console.log(Math.floor(avg));
 	console.log(Math.ceil(avg));
