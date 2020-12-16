@@ -18,7 +18,7 @@
       btn.textContent = '中吉'; //15%
     } else {
       btn.textContent = '凶';   //80%
-    }
+    };
 
     //確率操作する
 
@@ -37,7 +37,7 @@
     //     break;
     // }
 
-
+// タスク：gitとjavaすくとphpmyadmin入れる
 
 
   });
