@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <input placeholder="aaa@gmail.com">
+  <p>-----紐付け----</p>
+  <label for="name">名前</label>
+  <input type="text" id="name">
+
+  <p>-----紐付け----</p>
+  <p>input系にはラベルをつけるのが基本らしい</p>
+  <label>Name<input type="text" id="name"></label>
+  
+  <p>-------</p>
+
+  <fieldset>
+    <legend>使用中の製品</legend>
+    <label><input type="checkbox">テレビ</label>
+    <label><input type="checkbox">冷蔵庫</label>
+    <label><input type="checkbox">スマホ</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>一番よかったもの</legend>
+    <label><input type="radio" name="phone">テレビ</label>
+    <label><input type="radio" name="phone">冷蔵庫</label>
+    <label><input type="radio" name="phone">スマホ</label>
+  </fieldset>
+
+  <input type="color">
+  <input type="date">
+  <input type="number">
+  <input type="range">
+
+  <hr>
+
+  <input type="button" value="ok">
+  <button>OK</button>
+  <!-- buttonタグを使えば画像などをリファレンス的に入れても大丈夫な構成となる -->
+  <input type="button" value="ok" disabled>
+
+  <hr>
+
+  <form action="process.php" method="post">
+    <label>担当者名 <input type="text" name="usname"></label>
+    <label>タスク <input type="text" name="task"></label>
+    <button>追加</button>
+  </form>
+
+
+
+
+
+  <!-- <header>
+    <h2>沿革</h2>
+
+    <table border="solid">
+      <thead>
+        <tr>
+          <th>年</th>
+          <th>出来事</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2014</td>
+          <td>会社設立</td>
+        </tr>
+        <tr>
+          <td>2020</td>
+          <td>倒産</td>
+        </tr>
+      </tbody>
+
+    </table>
+  </header>
+
+  <h1>記事一覧</h1>
+  <article>
+    <h1>あの衝撃に愕然！とんでもないことに・・・</h1>
+    <div>
+      <p>とんでもないことがありました。凄まじいです。</p>
+      <footer>投稿日: <time>2020-01-01</time> by @skonishi</footer>
+    </div>
+  </article>
+
+  <article>
+    <h1>あの衝撃に愕然！とんでもないことに・・・</h1>
+    <div style="background-color: gray;">
+      <p>とんでもないことがありました。凄まじいです。</p>
+      <footer>投稿日: <time>2020-01-01</time> by @skonishi</footer>
+    </div>
+  </article> -->
+
+  
+</body>
+</html>

@@ -129,8 +129,10 @@ console.log('-------------');
 
 }
 
-//setTimeout(showTime, 1000); 1000ms後に1回だけ実行してという意味
 
+
+
+//setTimeout(showTime, 1000); 1000ms後に1回だけ実行してという意味
 {
 	let i = 0;
 

@@ -1,0 +1,41 @@
+/* 
+  h1 { セレクター
+    color: skyblue;  指定するスタイルを「宣言」 colorは「プロパティ」skyblueが「値」
+  }
+*/
+@charset "utf-8";
+/* 
+ブラウザに適用されるものではなく、
+cssファイルに日本語を記述するときに載せるプログラム 
+font-family: メイリオ; など。
+フォントの詳細：https://dotinstall.com/lessons/basic_css_styles_v2/51209
+
+*/
+
+body {
+  font-family: Verdana;
+}
+
+section {
+  color: red;
+  border: 1px solid #333;
+  /* colorは継承されているのに、borderはそのまま */
+}
+
+h1 {
+  border: inherit;
+  /* inherit:継承されないプロパティを継承させる場合に記述する 子要素に！ */
+}
+
+main {
+  font-size: 32px;
+  /* line-height: 2em; */
+  line-height: 2; /*単位なし：2倍*/
+  /* フォントサイズの2倍 -> 64px */
+}
+
+div {
+  font-size: 16px;
+    /* フォントサイズの2倍 -> 32pxで間隔が取られるので自然になる */
+    /* 2emで書いていたら親の倍の64pxで間隔が取られる*/
+}
