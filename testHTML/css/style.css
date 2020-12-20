@@ -39,3 +39,93 @@ div {
     /* フォントサイズの2倍 -> 32pxで間隔が取られるので自然になる */
     /* 2emで書いていたら親の倍の64pxで間隔が取られる*/
 }
+
+.test1 p{
+  line-height: 5;
+  background-color: pink;
+}
+
+.test1 img {
+  height: 50px;
+  /* vertical-align: bottom; */
+  vertical-align: -10px;
+}
+
+.hslaTest {
+  background-color: hsla(270, 80%, 80%, 1);
+  height: 50px;
+  width: 300px;
+}
+
+ul {
+  /* list-style-type: circle;
+  list-style-position: inside;
+  list-style-image: url(../../img/doron.jpg); */
+
+  /* 一括指定できる その他の例：border margin paddingなど*/
+  /* list-style: circle inside url(../../img/doron.jpg); */
+  border: 1px solid #999;
+}
+
+.box1 {
+  background-color: orange;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+  /* 中央揃え */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box2 {
+  background-color: skyblue;
+  width: 50%;
+  height: 50%;
+  /* overflow: hidden; */
+  overflow: scroll;
+  border: 10px solid blue;
+  /* paddingやborderを合わせてwidth,heightが50%となるよう設計 */
+  box-sizing: border-box;
+}
+.box3 {
+  background-color: tomato;
+  /* margin-top: 10px; */
+  /* box1のmg-btmと合わせて合計30pxにはならない(marginの相殺.垂直でmarginが重なると小さい方が打ち消される) */
+  width: 100px;
+  height: 40px;
+  display: inline-block;
+}
+
+.box4 {
+  margin-top: 30px;
+  /* width: calc((100% - 40px) / 3); */
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  box-shadow: 10px 5px rgba(0, 0, 0, 0.3);
+
+}
+.box5 {
+  /* width: calc((100% - 40px) / 3); */
+  width: 100px;
+  height: 100px;
+  background-color: skyblue;
+  margin: 0 auto;
+  text-shadow: 10px 5px rgba(0, 0, 0, 0.3);
+}
+.box6 {
+  /* width: calc((100% - 40px) / 3); */
+  width: 100px;
+  height: 100px;
+  background-color: tomato;
+  margin-left: auto;
+}
+
+header {
+  /* background-color: pink;
+  background-image: url(../../img/header.jpg);
+  background-size: cover; */
+  background: center/cover pink url(../../img/header.jpg) ;
+  height: 100px;
+}
+
